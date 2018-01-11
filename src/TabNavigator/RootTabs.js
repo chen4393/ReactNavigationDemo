@@ -30,6 +30,15 @@ const RootTabs = TabNavigator({
       ),
     },
   },
+}, {
+  tabBarPosition: 'bottom',
+  animationEnabled: true,
+  tabBarOptions: {
+    showIcon: true,
+    labelStyle: {
+      fontSize: 12,
+    },
+  },
 });
 
 export default RootTabs;
