@@ -7,7 +7,7 @@ class AllContactsScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.textStyle}>List of all contacts</Text>
         <Button
-          onPress={() => this.props.navigation.navigate('Chat', { user: 'Jane'})}
+          onPress={() => this.props.navigation.navigate('Chat', { user: 'Jane' })}
           title="Chat with Jane"
         />
       </View>

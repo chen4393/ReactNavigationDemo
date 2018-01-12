@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { StackNavigator } from 'react-navigation';
 
 class ChatScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({

@@ -7,7 +7,7 @@ class RecentChatsScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.textStyle}>List of recent chats</Text>
         <Button
-          onPress={() => this.props.navigation.navigate('Chat', { user: 'Lucy'})}
+          onPress={() => this.props.navigation.navigate('Chat', { user: 'Lucy' })}
           title="Chat with Lucy"
         />
       </View>
