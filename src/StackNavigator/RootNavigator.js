@@ -1,5 +1,18 @@
+import React from 'react';
+import { View, Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { HomeScreen, DetailsScreen } from './Screens';
+import { DetailsScreen } from './Screens';
+
+class HomeScreen extends React.Component {
+  render() {
+    const { navigate } = this.props.navigation;
+    return (
+      <View>
+        <Text>Home Screen</Text>
+      </View>
+    );
+  }
+}
 
 const RootNavigator = StackNavigator({
   Home: {
