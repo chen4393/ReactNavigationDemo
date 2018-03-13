@@ -6,6 +6,7 @@ import SimpleApp from './src/NestingNavigators/SimpleApp';
 
 export default class App extends React.Component {
   render() {
-    return <SimpleApp />;
+    // console.log(this.props.navigation.state);
+    return <SimpleApp />;//<RootDrawer />;
   }
 }

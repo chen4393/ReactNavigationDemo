@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 
 class RecentChatsScreen extends React.Component {
   render() {
+    console.log(this.props.navigation.state);
     return (
       <View style={styles.container}>
         <Text style={styles.textStyle}>List of recent chats</Text>

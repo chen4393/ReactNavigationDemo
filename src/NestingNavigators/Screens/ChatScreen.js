@@ -15,12 +15,16 @@ class ChatScreen extends React.Component {
       headerRight: (
         <Button
           title={isInfo ? 'Done' : `${user}'s info`}
-          onPress={() => setParams({ mode: isInfo ? 'none' : 'info' })}
+          onPress={() => {
+            setParams({ mode: isInfo ? 'none' : 'info' });
+            navigation.pop();
+          }}
         />
       ),
     };
   };
   render() {
+    console.log(this.props.navigation.state);
     const { params } = this.props.navigation.state;
     return (
       <View>

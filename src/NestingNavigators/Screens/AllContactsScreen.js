@@ -3,11 +3,17 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 
 class AllContactsScreen extends React.Component {
   render() {
+    console.log(this.props.navigation.state);
     return (
       <View style={styles.container}>
         <Text style={styles.textStyle}>List of all contacts</Text>
         <Button
-          onPress={() => this.props.navigation.navigate('Chat', { user: 'Jane' })}
+          onPress={
+            () => {
+              this.props.navigation.navigate('Chat', { user: 'Jane' });
+              // this.props.navigation.goBack();
+            }
+          }
           title="Chat with Jane"
         />
       </View>
